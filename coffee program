@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int P,X,flag;
+float c;
+scanf("%d%d",&P,&X);
+if(X==0)
+printf(0);
+else
+{
+ flag=X;
+ while(X>0)
+ {
+   c=(float)(X*P)/100;
+   X=X-c;
+   flag=flag+X;
+ }
+printf("%d",flag);
+}
+return 0;
+}
